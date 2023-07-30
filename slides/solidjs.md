@@ -318,7 +318,7 @@ function App() {
 }
 ```
 
-[playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr2ZCouOAGU0Ac2hqsvVwAtaQylZeUUVOg1tPQsrKxl6CGZcNFoIXgBBQkIACgBKfiteBzSyPmA1Wg8POBEASQhfMjhcABkqmvqIAF1eAF4HJxd3Lyg1HJkx5rzLdJKIMt5cDrU4ft58-oA+Xma2jtqGnJyANzGCvp2AQjO1Gbi5oVwmdJyi4t4AHgCg3kN-YR9ECVaqHCD5aSTNRqExQZgAayBnxM9Fwy3SaQAwhoEUDltVVpItu0PLwMJ99Ci0WktkT3h8vlT0bwsTjESB8R5CcSqizURSmTT6V99D9DFt3vcIJIHkJROJjhcdp8soRePotr4RLRmPR4BBcAA6Gq4ACiq31uAAQvg6iI3mAoNkVHkpWBJN0gA)
+[playground](https://playground.solidjs.com/anonymous/8545f7ef-7088-45b2-bc44-8b2804e8a660)
 
 ---
 layout: two-cols
@@ -407,7 +407,7 @@ layout: two-cols
 
 ::right::
 
-<section style="padding: 2rem; ">
+<section style="padding: 1rem 2rem 0;">
 ```bash
 npx degit solidjs/templates/ts my-solid-app
 ```
@@ -423,6 +423,13 @@ npx degit solidjs/templates/ts my-solid-app
 
 - [List of available templates](https://github.com/solidjs/templates/blob/master/README.md#solid-templates-using-vite)
 - [Vite docs](https://vitejs.dev/)
+
+
+<div style="padding-top: 2rem;" />
+
+### Examples
+
+- [barcode-generator](https://fabervitale.github.io/solid-bricks/examples/barcode-generator/)
 
 </section>
 
@@ -460,6 +467,12 @@ npm create astro@latest
 
 - [Getting started](https://docs.astro.build/en/getting-started/)
 - [Integrate Solid](https://docs.astro.build/en/guides/integrations-guide/solid-js/)
+
+<div style="padding-top: 2rem;" />
+
+### Examples
+
+- [romajs.org](https://romajs.org/)
 
 </section>
 

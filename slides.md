@@ -147,11 +147,6 @@ class: solidjs-slides
 ---
 
 ---
-src: ./slides/qwik.md
-class: qwik-slides
----
-
----
 
 # Conclusions
 
@@ -162,16 +157,6 @@ class: qwik-slides
 - Lightweight and fast runtime ⚡️
 - Familiar DX for React developers
 - Deceptively shallow learning curve
-
-</v-clicks>
-
-## Qwik
-
-<v-clicks>
-
-- Blazing fast page loads ⚡
-- WIP 🚧
-- All the closures must be serializable
 
 </v-clicks>
 
