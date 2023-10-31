@@ -16,14 +16,18 @@ css: unocss
 colorSchema: dark
 ---
 
-# The new wave of Javascript frameworks
+# The new wave of Javascript frameworks - Solid.js
 
 <style>
 h1 {
   font-weight: 500;
-  text-shadow: 4px 2px black;
+  text-shadow: 4px 2px black !important;
 }
 </style>
+
+<img class="absolute left-4 bottom-4" width="140" height="140" src="/assets/slides-url.svg" />
+
+<h2 class="absolute right-4 bottom-4" style="font-weight: 500; text-shadow: 4px 2px black !important;">Speaker: Fabrizio A. Vitale</h2>
 
 ---
 layout: image
