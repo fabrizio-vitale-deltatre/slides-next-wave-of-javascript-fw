@@ -154,19 +154,20 @@ layout: two-cols
 
 ## Slides
 
-- [https://next-wave-fw-slides.netlify.app](https://next-wave-fw-slides.netlify.app)
-- [<uim-github /> source](https://github.com/gdorsi/slides-next-wave-of-javascript-fw)
+- [https://next-wave-fw-solidjs.netlify.app/1](https://next-wave-fw-solidjs.netlify.app/1)
+- [<uim-github /> source](https://github.com/fabrizio-vitale-deltatre/slides-next-wave-of-javascript-fw/tree/feat/update-slides-for-internal-talk)
 
 
 ## Demo apps
 
-- react [https://next-wave-fw-react.netlify.app/](https://next-wave-fw-react.netlify.app/)
-- solid [https://next-wave-fw-solid.netlify.app/](https://next-wave-fw-solid.netlify.app/)
-- [<uim-github /> source](https://github.com/FaberVitale/next-frameworks-sample-app)
+-  [https://next-wave-fw-react.netlify.app/](https://next-wave-fw-react.netlify.app/) - [<uim-github /> source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/tree/reactjs)
+-  [https://next-wave-fw-solid.netlify.app/](https://next-wave-fw-solid.netlify.app/) - [<uim-github /> source](https://github.com/FaberVitale/next-frameworks-sample-app/tree/solidjs)
+- [<uim-github /> react-tv source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/tree/reactjs-tv)
+- [<uim-github /> solidjs-tv source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/tree/solidjs-tv)
 
 ## Speakers
 
-- [Fabrizio Vitale](https://github.com/FaberVitale)
+- [Fabrizio A. Vitale](https://github.com/FaberVitale)
 
 </div>
 
