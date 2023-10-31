@@ -1,9 +1,7 @@
 ---
 # try also 'default' to start simple
 theme: default
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: "/assets/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg"
+background: /assets/the_great_wave_off_the_coast_of_kanagawa.jpg
 # apply any windi css classes to the current slide
 class: "text-center"
 # https://sli.dev/custom/highlighters.html
@@ -27,10 +25,6 @@ h1 {
 }
 </style>
 
-<!-- 
-<p class="text-pic">By Fabrizio A. Vitale & Guido D'Orsi</p> 
--->
-
 ---
 layout: image
 image: /assets/brian-mcgowan-rCKIz0V7_Ok-unsplash.jpg
@@ -53,9 +47,6 @@ h1 {
 
 ## jQuery 🏆
 
-</v-click>
-
-<v-click>
 ```js
 Select2.prototype.render = function () {
   var $container = $(
@@ -77,6 +68,7 @@ Select2.prototype.render = function () {
   return $container;
 };
 ```
+
 </v-click>
 
 <style>
@@ -117,8 +109,6 @@ image: "/assets/jezael-melgoza-layMbSJ3YOE-unsplash.jpg"
 ---
 layout: image-left
 image: "/assets/alora-griffiths-E3wehabi_B4-unsplash.jpg"
-
-class: bg-yellow-300
 ---
 
 # React is starting to show its limits
@@ -130,32 +120,6 @@ class: bg-yellow-300
 - Hydration times
 
 </v-clicks>
-
----
-disabled: true
-layout: image
-image: "/assets/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg"
----
-
-<header class="fw-intro-header">
-  <h1 class="text-pic fixed">The new wave of Javascript frameworks</h1>
-  
-  <v-click>
-    <h2 class="text-pic fixed">Solid.js & Qwik</h2> 
-  </v-click>
-</header>
-
-<style>
-.fw-intro-header.fw-intro-header h1 {
-  right: 1rem;
-  top: 3rem;
-}
-
-.fw-intro-header.fw-intro-header h2 {
-  right: 1rem;
-  top: 8rem;
-}
-</style>
 
 ---
 src: ./slides/solidjs.md
@@ -199,6 +163,7 @@ layout: two-cols
 ## Speakers
 
 - [Fabrizio Vitale](https://github.com/FaberVitale)
+
 </div>
 
 ::right::

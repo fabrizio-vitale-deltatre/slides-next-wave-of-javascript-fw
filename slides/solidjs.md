@@ -1,20 +1,44 @@
 ---
-layout: cover
+layout: image
+image: "/assets/solid-logo-full.svg"
 ---
 
-<img src="/assets/solid-logo-full.svg"/>
+<style>
+  [layout="image"] {
+    background-size: contain !important;
+  }
+</style>
 
 ---
 layout: two-cols
 ---
 
-<header>
 <h1>What's SolidJS?</h1>
-</header>
 
-<p class="no-margin">Solid is a lightweight and declarative reactive library for building user interfaces.</p>
+<v-clicks>
 
-<h2 class="no-margin">Features</h2>
+- Solid.js is a lightweight and declarative reactive library for building user interfaces.
+- 5+ years of developement.
+- Maintained by [Ryan Carniato](https://github.com/ryansolid).
+
+</v-clicks>
+
+::right::
+
+<img class="solid-logo" width="200" height="200" src="/assets/solid-logo.svg" />
+
+<style>
+  .solid-logo {
+    margin: 5rem auto 0;
+  }
+</style>   
+
+
+---
+layout: two-cols
+---
+
+<h1 class="no-margin">Features</h1>
 
 - JSX templating
 - Component based
@@ -55,17 +79,9 @@ layout: two-cols
 }
 </style>
 
-<header>
-<h1>SolidJS is fast</h1>
-</header>
+<h1 class="solidjs-two-cols-heading">Solid.js is fast</h1>
 
-<div class="relative solid-perf-img-wrapper solid-js-bg2">
-  <img class="solid-perf-img" src="/assets/christian-englmeier-J7EUjSlNQtg-unsplash.jpg" logo="speed" aria-hidden="true" />
-</div>
-
-::right::
-
-<div class="solidjs-click-list">
+<div class="solidjs-click-list mt-8">
 <v-clicks>
 
 - It's **just** [7.3KB min+gzip](https://bundlephobia.com/package/solid-js@1.5.1).
@@ -76,6 +92,11 @@ layout: two-cols
 </v-clicks>
 </div>
 
+::right::
+
+<div class="absolute top-0 solid-perf-img-wrapper solid-js-bg2">
+  <img class="solid-perf-img" src="/assets/christian-englmeier-J7EUjSlNQtg-unsplash.jpg" logo="speed" aria-hidden="true" />
+</div>
 
 ---
 layout: center
@@ -87,9 +108,7 @@ layout: center
 layout: two-cols
 ---
 
-<header>
-<h1>🍎 to 🍏 comparison / 1</h1>
-</header>
+<h1 class="solidjs-two-cols-heading">🍎 to 🍏 comparison / 1</h1>
 
 <div class="mt-5 side-blocks">
 
@@ -136,13 +155,10 @@ assets/index.54c59109.js  13.62 KiB / gzip: 5.75 KiB
 </style>
 
 ---
-layout: image-right
-image: /assets/mahdi-bafande.jpg
+layout: two-cols
 ---
 
-<header>
-<h1 style="white-space: nowrap;">🍎 to 🍏 comparison / 2</h1>
-</header>
+<h1 class="solidjs-two-cols-heading">🍎 to 🍏 comparison / 2</h1>
 
 <div class="mt-16 side-blocks text-2xl">
 
@@ -151,28 +167,43 @@ image: /assets/mahdi-bafande.jpg
 
 </div>
 
+::right::
+
+<img style="position: absolute; top: -140px; clip-path: polygon(0 24%, 100% 24%, 100% 80%, 0 80%);" src="/assets/mahdi-bafande.jpg" />
 
 ---
 layout: two-cols
 ---
 
-<header>
-<h1>🍎 to 🍏 comparison / 3</h1>
-</header>
+<h1 class="solidjs-two-cols-heading">🍎 to 🍏 comparison / 3</h1>
+
+<div class="mt-5 side-blocks">
 
 ## React webOs TV app
 
 [<uim-github /> - source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/blob/reactjs-tv/src/App.tsx)
 
-Tested on a LG Smart TV, webOs 4.9.7-17
+### Tested on
+
+-  LG Smart TV, webOs 4.9.7-17
+-  Simulator 1.3.0
+
+</div>
 
 ::right::
+
+<div class="mt-5 side-blocks">
 
 ## Solid.js webOs TV app
 
 [<uim-github /> - source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/blob/solidjs-tv/src/App.tsx)
 
-Tested on a LG Smart TV, webOs 4.9.7-17
+### Tested on
+
+-  LG Smart TV, webOs 4.9.7-17
+-  Simulator 1.3.0
+
+</div>
 
 ---
 layout: center
@@ -230,7 +261,7 @@ layout: center
 
 ---
 
-# React uses a Virtual DOM, Solid doesn't
+# React uses a Virtual DOM, Solid.js doesn't
 
 <div class="solidjs-click-list mt-12">
 <v-clicks>
@@ -320,7 +351,7 @@ layout: center
 layout: center
 ---
 
-# Solid component
+# Solid.js component
 
 ```typescript
 function Counter(props) {
@@ -338,7 +369,7 @@ function Counter(props) {
 }
 ```
 
-A standard Solid component it's just a function that:
+A standard Solid.js component it's just a function that:
 - returns a DOM [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 - receives props from the parent component
 - runs **once** per instance, in other words, does not rerender
@@ -349,9 +380,7 @@ A standard Solid component it's just a function that:
 layout: two-cols
 ---
 
-<header>
-<h1>Conditional rendering</h1>
-</header>
+<h1 class="solidjs-two-cols-heading">Conditional rendering</h1>
 
 ## React
 
@@ -396,9 +425,7 @@ function App() {
 layout: two-cols
 ---
 
-<header>
-<h1>Render lists</h1>
-</header>
+<h1 class="solidjs-two-cols-heading">Render lists</h1>
 
 ## React
 
@@ -471,15 +498,14 @@ layout: two-cols
   }
 </style>
 
-<header class="flex">
-<h1>Create new project | Vite template</h1>
-</header>
+<h1 class="solidjs-two-cols-heading">Create new project | Vite template</h1>
 
 <img style="width: 60%; margin: 2rem auto 0;" src="/assets/vite-logo-shadow.png" alt="vite logo" aria-hidden="true" />
 
 ::right::
 
 <section style="padding: 1rem 2rem 0;">
+
 ```bash
 npx degit solidjs/templates/ts my-solid-app
 ```
@@ -513,9 +539,7 @@ npx degit solidjs/templates/ts my-solid-app
 layout: two-cols
 ---
 
-<header class="flex">
-<h1>Create new project | Astro</h1>
-</header>
+<h1 class="solidjs-two-cols-heading">Create new project | Astro</h1>
 
  <img style="margin: 5rem 1rem 0" src="/assets/astro-logo-dark.svg" alt="astro logo" />
 
@@ -552,9 +576,7 @@ npm create astro@latest
 layout: two-cols
 ---
 
-<header class="flex">
-<h1>Create new project | SolidStart</h1>
-</header>
+<h1 class="solidjs-two-cols-heading">Create new project | SolidStart</h1>
 
  <img style="margin: 2rem 0 0" src="/assets/solid-bg-1.svg" alt="solid logo" />
 
