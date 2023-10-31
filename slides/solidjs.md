@@ -76,12 +76,19 @@ layout: two-cols
 </v-clicks>
 </div>
 
+
+---
+layout: center
+---
+
+# 🍎 to 🍏 comparison
+
 ---
 layout: two-cols
 ---
 
 <header>
-<h1>Smaller bundles | A demo app</h1>
+<h1>🍎 to 🍏 comparison / 1</h1>
 </header>
 
 <div class="mt-5 side-blocks">
@@ -97,6 +104,7 @@ assets/index.d60afae4.js  141.33 KiB / gzip: 45.79 KiB
 
 - [website](https://next-wave-fw-react.netlify.app?q=Javascript)
 - [<uim-github /> - source](https://github.com/FaberVitale/next-frameworks-sample-app/blob/8a88dfa74d9e12076d120807f79317fd45445cbc/src/App.tsx)
+- **[webpagetest.org test](https://www.webpagetest.org/result/231031_BiDcK5_6EM/)**
 
 </div>
 
@@ -115,6 +123,7 @@ assets/index.54c59109.js  13.62 KiB / gzip: 5.75 KiB
 
 - [website](https://next-wave-fw-solid.netlify.app?q=Javascript)
 - [<uim-github /> - source](https://github.com/FaberVitale/next-frameworks-sample-app/blob/b79aa7c06c09d888d91e2edbb1f023cfff99323a/src/App.tsx)
+- **[webpagetest.org test](https://www.webpagetest.org/result/231031_AiDcRB_6YK/)**
 
 </div>
 
@@ -127,33 +136,49 @@ assets/index.54c59109.js  13.62 KiB / gzip: 5.75 KiB
 </style>
 
 ---
+layout: image-right
+image: /assets/mahdi-bafande.jpg
+---
+
+<header>
+<h1 style="white-space: nowrap;">🍎 to 🍏 comparison / 2</h1>
+</header>
+
+<div class="mt-16 side-blocks text-2xl">
+
+- **[js-framework-benchmark results](https://krausest.github.io/js-framework-benchmark/2023/table_chrome_118.0.5993.70.html)**
+- [<uim-github /> - source](https://github.com/krausest/js-framework-benchmark)
+
+</div>
+
+
+---
+layout: two-cols
+---
+
+<header>
+<h1>🍎 to 🍏 comparison / 3</h1>
+</header>
+
+## React webOs TV app
+
+[<uim-github /> - source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/blob/reactjs-tv/src/App.tsx)
+
+Tested on a LG Smart TV, webOs 4.9.7-17
+
+::right::
+
+## Solid.js webOs TV app
+
+[<uim-github /> - source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/blob/solidjs-tv/src/App.tsx)
+
+Tested on a LG Smart TV, webOs 4.9.7-17
+
+---
 layout: center
 ---
 
-# Solid component
-
-```typescript
-function Counter(props) {
-  const [count, setCount] = createSignal(props.initialCount ?? 0);
-
-  createEffect(() => {
-    console.log(`count ${count()}`);
-  });
-
-  return (
-    <button type="button" onClick={() => setCount((n) => ++n)}>
-      {count()}
-    </button>
-  );
-}
-```
-
-A standard Solid component it's just a function that:
-- returns a DOM [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
-- receives props from the parent component
-- runs **once** per instance, in other words, does not rerender
-
-[playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr2ZCouOAGU0Ac2hqps+YpU6DW09CysrZloIMj5ItW4yXgBeXmAVSMYIGXjjRhM1ejgVLGUwQgwAa2LSwiZCNSLsUrI0NQA3cRUAXUsIBtj1bgBJEQpk3gAGXqsZeghmXDQo3gBhBggXRgAKQnlCMgBKfiteByiY1Mi53BKyOFw1667xxzhnN09vHb2yADoMNCLKBqR4bXgAfnBkwO0wgpxEtGY9HgG1+JloInwvxi+AaaKgzAqHnkcxEL0GjDIwDiw1GPROvAA1IyaYwRhRYadItF1HBfvEPFsQAyuRT2VgRbwTB41vFGIheAikSjcGiMVicXiTASiSTRBK4VIYeFDUJcEw4VtJQAeEz0XC4ZYEYhJFR2h1RFS8KIrDSEpIgLZHJIAPl4dwe61wWy2EGDYeZcckIclpxAVw2QckNv07sdEBThuNEGzECsQlE4hj8d41tBm14+hDJSVyOEqo89wAog0VQAhfAjK1gKCEQgqA4AQmLrZVasx2IIeJkUVw7gAXnBxioAIwAJgmhAoYUwki6QA)
+# Why is Solidjs fast?
 
 ---
 
@@ -203,10 +228,28 @@ A standard Solid component it's just a function that:
  <img src="/assets/solidjs-update.svg" alt="react reconciliation" />
 </div>
 
+---
+
+# React uses a Virtual DOM, Solid doesn't
+
+<div class="solidjs-click-list mt-12">
+<v-clicks>
+
+- Solid.js renders each template once.
+- Solid.js constructs a reactive graph to apply fine-grained changes.
+
+</v-clicks>
+</div>
+
+---
+layout: center
+---
+
+# Fine-grained reactivity
 
 ---
 
-# Automatic dependency tracking
+# Fine-grained reactivity / 1
 
 ```typescript {all|2,5-7,12|3,5-7,15}
 function Sum() {
@@ -230,17 +273,17 @@ function Sum() {
 }
 ```
 
-[playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr2ZCouOAGU0Ac2hqsDpy4BRGRk4Zj5pOQVlVQ1tPQsrKxl6CDC0WgheV3oYAAoASn4rXgcMsj5gKF8yOFwAQQBdXgBePzhnN09vXIAGfMtM0ohy3mATatqAISbWx3aXdy8oNV7+xMG5jqCQsNyCloA+IsGS5jL1OAA6NVoPXIADKF4Aal4TFt4AEhAofdeTAqSe5rQaSEHFQS1JiZXIQkoAHgOcJKvHhJnouFwGV4BGIzRU6MxGRUvAyAGENMwANbNED7ZpHGr1PYQQoMl7PVmSJEnFElJ6vACMvFyP0B+WRCP0hKxEB5fIRMuxuLg+LASogJPJlJpdLZjKmLP1HK58oVJXeQpFdIB+XyYMlqOlGNlZr58MIboVIEeLzeH2+v0K-0B90kA3N8P0nuRUbNIMk6yEonEe2N8Oyin0B18IlozBywlwlw8tQCajg8AguEm+AAkiJYWAoIRCCp8gBCcGifOF6uXEy0ET4S7lfAVy4yDK4dwALzgHxUABYAByECgJTCSBpAA) - [reactivity guide](https://www.solidjs.com/guides/reactivity)
+[playground](https://playground.solidjs.com/anonymous/7829c949-e57a-49b5-bb30-06a1a7657724) - [reactivity guide](https://www.solidjs.com/guides/reactivity)
 
 ---
 
 
-# Fine-Grained reactivity
+# Fine-grained reactivity / 2
 
 <div class="solidjs-click-list pt-6 pb-6">
 <v-clicks>
 
-- Signals are **observables** that notify whenever their value changes.
+- Signals are like **observables** that notify whenever their value changes.
 - Effects are automatically **subscribed** to signals they read.
 - Before an Effect executes (or re-executes) it is marked as **current listener**.
 - Any Signal that is read adds the **current listener** to its subscribers. 
@@ -272,6 +315,35 @@ layout: center
 </v-clicks>
 
 </div>
+
+---
+layout: center
+---
+
+# Solid component
+
+```typescript
+function Counter(props) {
+  const [count, setCount] = createSignal(props.initialCount ?? 0);
+
+  createEffect(() => {
+    console.log(`count ${count()}`);
+  });
+
+  return (
+    <button type="button" onClick={() => setCount((n) => ++n)}>
+      {count()}
+    </button>
+  );
+}
+```
+
+A standard Solid component it's just a function that:
+- returns a DOM [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+- receives props from the parent component
+- runs **once** per instance, in other words, does not rerender
+
+[playground](https://playground.solidjs.com/anonymous/e3e51094-6dc9-42a0-a443-29e5aef0bcbe)
 
 ---
 layout: two-cols
@@ -517,7 +589,6 @@ image: /assets/mahdi-bafande.jpg
 - [SolidJS intro (100 Seconds)](https://www.youtube.com/watch?v=hw3Bx5vxKl0)
 - [SolidJS Tutorial](https://www.solidjs.com/tutorial/introduction_basics)
 - [API Reference](https://www.solidjs.com/docs/latest/api)
-- [FAQ: Why doesn't my early return work in Solid?](https://www.youtube.com/watch?v=Ilf34WjMBkU)
 - [Benchmarks](https://krausest.github.io/js-framework-benchmark/index.html)
 
 ## Community

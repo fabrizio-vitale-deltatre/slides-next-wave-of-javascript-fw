@@ -27,8 +27,23 @@ h1 {
 }
 </style>
 
+<!-- 
+<p class="text-pic">By Fabrizio A. Vitale & Guido D'Orsi</p> 
+-->
 
-<p class="text-pic">By Fabrizio A. Vitale & Guido D'Orsi</p>
+---
+layout: image
+image: /assets/brian-mcgowan-rCKIz0V7_Ok-unsplash.jpg
+---
+
+# Once upon a time...
+
+
+<style>
+h1 {
+  text-shadow: 1px 1px black;
+}
+</style>
 
 ---
 
@@ -106,7 +121,7 @@ image: "/assets/alora-griffiths-E3wehabi_B4-unsplash.jpg"
 class: bg-yellow-300
 ---
 
-# React is starting to show it's limits
+# React is starting to show its limits
 
 <v-clicks>
 
@@ -117,6 +132,7 @@ class: bg-yellow-300
 </v-clicks>
 
 ---
+disabled: true
 layout: image
 image: "/assets/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg"
 ---
@@ -176,14 +192,12 @@ layout: two-cols
 
 ## Demo apps
 
-- qwik [https://next-wave-fw-qwik.netlify.app/](https://next-wave-fw-qwik.netlify.app/)
 - react [https://next-wave-fw-react.netlify.app/](https://next-wave-fw-react.netlify.app/)
 - solid [https://next-wave-fw-solid.netlify.app/](https://next-wave-fw-solid.netlify.app/)
 - [<uim-github /> source](https://github.com/FaberVitale/next-frameworks-sample-app)
 
 ## Speakers
 
-- [Guido D'Orsi](https://github.com/gdorsi)
 - [Fabrizio Vitale](https://github.com/FaberVitale)
 </div>
 
