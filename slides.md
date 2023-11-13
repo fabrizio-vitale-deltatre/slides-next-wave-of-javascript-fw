@@ -174,7 +174,7 @@ layout: two-cols
 <div class="pt-24 text-2xl">
 <v-clicks>
 
-- You have a project with strict performance requirements.
+- You have a project with strict performance or memory requirements.
 - You have a team open to work with a new framework.
 - The target browsers support [globalThis.Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) ([Chrome 49+](https://caniuse.com/?search=Proxy)).
 
