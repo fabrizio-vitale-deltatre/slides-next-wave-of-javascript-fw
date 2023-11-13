@@ -13,7 +13,7 @@ image: "/assets/solid-logo-full.svg"
 layout: two-cols
 ---
 
-<h1>What's SolidJS?</h1>
+<h1>What's Solid.js?</h1>
 
 <v-clicks>
 
@@ -61,6 +61,119 @@ layout: two-cols
   }
 </style>   
 
+---
+layout: center
+---
+
+# 🍎 to 🍏 performance comparison
+
+---
+layout: two-cols
+---
+
+<h1 class="solidjs-two-cols-heading">🍎 to 🍏 performance comparison / 1</h1>
+
+<div class="mt-5 side-blocks">
+
+## React 
+
+```bash {4}
+[...]
+index.html                1.58 KiB
+assets/index.f8c30131.css 51.87 KiB / gzip: 10.26 KiB
+assets/index.d60afae4.js  141.33 KiB / gzip: 45.79 KiB
+```
+
+- [website](https://next-wave-fw-react.netlify.app?q=Javascript)
+- [<uim-github /> - source](https://github.com/FaberVitale/next-frameworks-sample-app/blob/8a88dfa74d9e12076d120807f79317fd45445cbc/src/App.tsx)
+- **[webpagetest.org test](https://www.webpagetest.org/result/231031_BiDcK5_6EM/)**
+
+</div>
+
+::right::
+
+<div class="mt-5 side-blocks">
+
+## Solid.js
+
+```bash {4}
+[...]
+index.html                1.58 KiB
+assets/index.f8c30131.css 51.87 KiB / gzip: 10.26 KiB
+assets/index.54c59109.js  13.62 KiB / gzip: 5.75 KiB
+```
+
+- [website](https://next-wave-fw-solid.netlify.app?q=Javascript)
+- [<uim-github /> - source](https://github.com/FaberVitale/next-frameworks-sample-app/blob/b79aa7c06c09d888d91e2edbb1f023cfff99323a/src/App.tsx)
+- **[webpagetest.org test](https://www.webpagetest.org/result/231031_AiDcRB_6YK/)**
+
+</div>
+
+<style>
+  .side-blocks {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+  }
+</style>
+
+---
+layout: two-cols
+---
+
+<h1 class="solidjs-two-cols-heading">🍎 to 🍏 performance comparison / 2</h1>
+
+<div class="mt-16 side-blocks text-2xl">
+
+- **[js-framework-benchmark results](https://krausest.github.io/js-framework-benchmark/2023/table_chrome_118.0.5993.70.html)**
+- [<uim-github /> - source](https://github.com/krausest/js-framework-benchmark)
+
+</div>
+
+::right::
+
+<img style="position: absolute; top: -140px; clip-path: polygon(0 24%, 100% 24%, 100% 80%, 0 80%);" src="/assets/mahdi-bafande.jpg" />
+
+---
+layout: two-cols
+---
+
+<h1 class="solidjs-two-cols-heading">Performance: 🍎 to 🍏 comparison / 3</h1>
+
+<div class="mt-5 side-blocks">
+
+## React webOs TV app
+
+[<uim-github /> - source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/blob/reactjs-tv/src/App.tsx)
+
+### Tested on
+
+-  LG Smart TV, webOs 4.9.7-17
+-  Simulator 1.3.0
+
+</div>
+
+::right::
+
+<div class="mt-5 side-blocks">
+
+## Solid.js webOs TV app
+
+[<uim-github /> - source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/blob/solidjs-tv/src/App.tsx)
+
+### Tested on
+
+-  LG Smart TV, webOs 4.9.7-17
+-  Simulator 1.3.0
+
+</div>
+
+---
+layout: center
+---
+
+# Why is Solidjs fast?
+
 --- 
 layout: two-cols
 ---
@@ -97,119 +210,6 @@ layout: two-cols
 <div class="absolute top-0 solid-perf-img-wrapper solid-js-bg2">
   <img class="solid-perf-img" src="/assets/christian-englmeier-J7EUjSlNQtg-unsplash.jpg" logo="speed" aria-hidden="true" />
 </div>
-
----
-layout: center
----
-
-# 🍎 to 🍏 comparison
-
----
-layout: two-cols
----
-
-<h1 class="solidjs-two-cols-heading">🍎 to 🍏 comparison / 1</h1>
-
-<div class="mt-5 side-blocks">
-
-## React 
-
-```bash {4}
-[...]
-index.html                1.58 KiB
-assets/index.f8c30131.css 51.87 KiB / gzip: 10.26 KiB
-assets/index.d60afae4.js  141.33 KiB / gzip: 45.79 KiB
-```
-
-- [website](https://next-wave-fw-react.netlify.app?q=Javascript)
-- [<uim-github /> - source](https://github.com/FaberVitale/next-frameworks-sample-app/blob/8a88dfa74d9e12076d120807f79317fd45445cbc/src/App.tsx)
-- **[webpagetest.org test](https://www.webpagetest.org/result/231031_BiDcK5_6EM/)**
-
-</div>
-
-::right::
-
-<div class="mt-5 side-blocks">
-
-## SolidJS
-
-```bash {4}
-[...]
-index.html                1.58 KiB
-assets/index.f8c30131.css 51.87 KiB / gzip: 10.26 KiB
-assets/index.54c59109.js  13.62 KiB / gzip: 5.75 KiB
-```
-
-- [website](https://next-wave-fw-solid.netlify.app?q=Javascript)
-- [<uim-github /> - source](https://github.com/FaberVitale/next-frameworks-sample-app/blob/b79aa7c06c09d888d91e2edbb1f023cfff99323a/src/App.tsx)
-- **[webpagetest.org test](https://www.webpagetest.org/result/231031_AiDcRB_6YK/)**
-
-</div>
-
-<style>
-  .side-blocks {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1.5rem;
-  }
-</style>
-
----
-layout: two-cols
----
-
-<h1 class="solidjs-two-cols-heading">🍎 to 🍏 comparison / 2</h1>
-
-<div class="mt-16 side-blocks text-2xl">
-
-- **[js-framework-benchmark results](https://krausest.github.io/js-framework-benchmark/2023/table_chrome_118.0.5993.70.html)**
-- [<uim-github /> - source](https://github.com/krausest/js-framework-benchmark)
-
-</div>
-
-::right::
-
-<img style="position: absolute; top: -140px; clip-path: polygon(0 24%, 100% 24%, 100% 80%, 0 80%);" src="/assets/mahdi-bafande.jpg" />
-
----
-layout: two-cols
----
-
-<h1 class="solidjs-two-cols-heading">🍎 to 🍏 comparison / 3</h1>
-
-<div class="mt-5 side-blocks">
-
-## React webOs TV app
-
-[<uim-github /> - source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/blob/reactjs-tv/src/App.tsx)
-
-### Tested on
-
--  LG Smart TV, webOs 4.9.7-17
--  Simulator 1.3.0
-
-</div>
-
-::right::
-
-<div class="mt-5 side-blocks">
-
-## Solid.js webOs TV app
-
-[<uim-github /> - source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/blob/solidjs-tv/src/App.tsx)
-
-### Tested on
-
--  LG Smart TV, webOs 4.9.7-17
--  Simulator 1.3.0
-
-</div>
-
----
-layout: center
----
-
-# Why is Solidjs fast?
 
 ---
 
@@ -250,7 +250,7 @@ layout: center
   }
 </style>
 
-<h1 class="absolute">SolidJS update</h1>
+<h1 class="absolute">Solid.js update</h1>
 <div class="relative" style="padding: 2.5rem 1rem 1rem">
   <div class="absolute react-recon-count">
     count: <s>7</s>=><strong style="color: inherit;">8</strong>
@@ -276,59 +276,7 @@ layout: center
 layout: center
 ---
 
-# Fine-grained reactivity
-
----
-
-# Fine-grained reactivity / 1
-
-```typescript {all|2,5-7,12|3,5-7,15}
-function Sum() {
-  const [a, setA] = createSignal(0);
-  const [b, setB] = createSignal(0);
-
-  createEffect(() => {
-    console.log(`a + b = ${a() + b()}`);
-  });
-
-  return (
-    <>
-      <button type="button" onClick={() => setA((n) => ++n)}>
-        a + 1 ({a()})
-      </button>
-      <button type="button" onClick={() => setB((n) => ++n)}>
-        b + 1 ({(b())})
-      </button>
-    </>
-  );
-}
-```
-
-[playground](https://playground.solidjs.com/anonymous/7829c949-e57a-49b5-bb30-06a1a7657724) - [reactivity guide](https://www.solidjs.com/guides/reactivity)
-
----
-
-
-# Fine-grained reactivity / 2
-
-<div class="solidjs-click-list pt-6 pb-6">
-<v-clicks>
-
-- Signals are like **observables** that notify whenever their value changes.
-- Effects are automatically **subscribed** to signals they read.
-- Before an Effect executes (or re-executes) it is marked as **current listener**.
-- Any Signal that is read adds the **current listener** to its subscribers. 
-
-</v-clicks>
-</div>
-
-[reactivity guide](https://www.solidjs.com/guides/reactivity)
-
----
-layout: center
----
-
-# Side by side API comparison
+# 🍎 to 🍏 API comparison
 
 ---
 
@@ -486,6 +434,12 @@ function Palette(props: { palette: string[] }) {
 </div>
 
 ---
+layout: center
+---
+
+# Create a new project
+
+---
 layout: two-cols
 ---
 
@@ -582,7 +536,7 @@ layout: two-cols
 
 ::right::
 
-Meta-framework developed by the [SolidJS team](https://www.solidjs.com/contributors),
+Meta-framework developed by the [Solid.js team](https://www.solidjs.com/contributors),
 powered by [vite](https://vitejs.dev/) and currently in **beta**.
 
 <section style="padding: 2rem; ">
@@ -600,22 +554,3 @@ powered by [vite](https://vitejs.dev/) and currently in **beta**.
 - [Project setup](https://start.solidjs.com/getting-started/project-setup)
 
 </section>
-
----
-layout: image-right
-image: /assets/mahdi-bafande.jpg
----
-
-## Resources
-
-- [SolidJS intro (100 Seconds)](https://www.youtube.com/watch?v=hw3Bx5vxKl0)
-- [SolidJS Tutorial](https://www.solidjs.com/tutorial/introduction_basics)
-- [API Reference](https://www.solidjs.com/docs/latest/api)
-- [Benchmarks](https://krausest.github.io/js-framework-benchmark/index.html)
-
-## Community
-
-- [<uim-twitter /> - twitter](https://twitter.com/solid_js)
-- [<uim-discord /> - discord](https://discord.com/invite/solidjs)
-- [<uim-github /> - github](https://github.com/solidjs/solid)
-- [<uim-youtube /> - youtube](https://www.youtube.com/channel/UCXsRnrbzIX8KHdf86PE241Q)

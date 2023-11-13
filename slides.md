@@ -122,8 +122,20 @@ image: "/assets/alora-griffiths-E3wehabi_B4-unsplash.jpg"
 - Too many renders issue
 - Lack of standards
 - Hydration times
+- [Tied more and more to Next.js](https://www.epicweb.dev/why-i-wont-use-nextjs#nextjs-is-eating-react)
 
 </v-clicks>
+
+---
+layout: center
+---
+
+# Is React the best tool for every project?
+
+<div class="flex justify-center w-fluid pt-8">
+<img src="/assets/hammer-and-nail.jpg" />
+</div>
+<p class="flex justify-center w-fluid text-sm !italic">If all you have is a hammer every problem looks like a nail</p>
 
 ---
 src: ./slides/solidjs.md
@@ -131,18 +143,49 @@ class: solidjs-slides
 ---
 
 ---
+layout: center
+---
 
 # Conclusions
 
-## SolidJS
+---
+layout: center
+---
 
+# Is React the best tool for every project?
+
+<div class="flex justify-center w-fluid pt-8">
+<img src="/assets/hammer-and-nail.jpg" />
+</div>
+<p class="flex justify-center w-fluid text-sm !italic">If all you have is a hammer every problem looks like a nail</p>
+
+---
+layout: center
+---
+
+# Let's rephrase this question
+
+---
+layout: two-cols
+---
+
+<h1 class="fixed top-8 left-8 w-full">When can Solid.js be right tool for the job?</h1>
+
+<div class="pt-24 text-2xl">
 <v-clicks>
 
-- Lightweight and fast runtime ⚡️
-- Familiar DX for React developers
-- Deceptively shallow learning curve
+- You have a project with strict performance requirements.
+- You have a team open to work with a new framework.
+- The target browsers support [globalThis.Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) ([Chrome 49+](https://caniuse.com/?search=Proxy)).
 
 </v-clicks>
+</div>
+
+::right::
+
+<div class="w-full flex justify-center pt-12">
+<img width="280" style="margin: 4rem 0 0" src="/assets/solid-logo.svg" alt="solid logo" />
+</div>
 
 ---
 layout: two-cols
@@ -165,7 +208,7 @@ layout: two-cols
 - [<uim-github /> react-tv source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/tree/reactjs-tv)
 - [<uim-github /> solidjs-tv source](https://github.com/fabrizio-vitale-deltatre/next-frameworks-sample-app/tree/solidjs-tv)
 
-## Speakers
+## Speaker
 
 - [Fabrizio A. Vitale](https://github.com/FaberVitale)
 
